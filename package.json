@@ -9,10 +9,11 @@
   "author": "eeyorr",
   "license": "ISC",
   "devDependencies": {
+    "@types/del": "^4.0.0",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
-    "run-sequence": "^2.2.1"
+    "gulp4-run-sequence": "^1.0.0"
   },
   "dependencies": {
     "gulp-sourcemaps": "^2.6.5"
