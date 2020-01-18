@@ -59,8 +59,6 @@ libraries:
   - your-theme-name/global-styling
   - your-theme-name/global-scripts
 
-3. Profit!
-
 
 Templates
 --------
