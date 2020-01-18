@@ -1,0 +1,21 @@
+.layout-container {
+	margin: (2 * $vertical-spacing) 0;
+}
+
+.container {
+	max-width: $max-page-width;
+	margin: 0 auto;
+	// outline: $debug-orange;
+}
+
+.region {
+	outline: $debug-blue;
+	padding: $vertical-spacing 0;
+}
+
+@media (max-width: $desktop) {
+   .container {
+   		margin: 0 $page-margin;
+   }
+
+}

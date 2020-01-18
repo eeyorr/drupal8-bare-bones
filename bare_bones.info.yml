@@ -1,0 +1,30 @@
+name: bare_bones
+type: theme
+base theme: classy
+description: "The bare_bones starter theme is a lightweight starter theme based on the core Classy theme. It's meant for you to completely customize based on your own project design."
+package: Custom
+# version: VERSION
+# core: 8.x
+libraries:
+  - bare_bones/global-styling
+  - bare_bones/global-scripts
+
+regions:
+  leaderboard: Leaderboard
+  header: Header
+  main_menu: 'Main menu'
+  secondary_menu: 'Secondary menu'
+  hero: Hero
+  highlighted: Highlighted
+  help: Help
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+
+
+version: '8.x-1.0'
+core: '8.x'
+project: 'bare_bones'
+datestamp: 1544033280

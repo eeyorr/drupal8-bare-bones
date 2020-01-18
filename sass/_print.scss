@@ -1,0 +1,67 @@
+/**
+ * @file
+ * Print styling
+ */
+
+/**
+ * By importing this CSS file as media "all", we allow this print file to be
+ * aggregated with other stylesheets, for improved front-end performance.
+ */
+@media print {
+  body {
+    padding-top: 0 !important;
+    color: #000;
+  }
+
+  /* Underline all links. */
+  a,
+  a:link,
+  a:visited {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+
+  main {
+    /* Add visible URL after links. */
+    a[href]:after {
+      color: #000 !important;
+      content: " (" attr(href) ")" !important;
+    }
+
+    /* Only display useful links. */
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+      content: "";
+    }
+
+    /* Add visible title after abbreviations. */
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+  }
+
+  /* Turn off any background colors or images. */
+  header,
+  body,
+  #main-content {
+    color: #000;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  /* Hide sidebars and nav elements. */
+  .skip-link,
+  #toolbar-administration,
+  .toolbar,
+  nav,
+  footer,
+  iframe,
+  .trigger,
+  .breadcrumb,
+  .tabs,
+  .pager,
+  .feed-icons {
+    visibility: hidden;
+    display: none;
+  }
+}

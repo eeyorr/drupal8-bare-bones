@@ -1,0 +1,14 @@
+// Units
+
+// ** When you can...
+// ** Use REMs for sizes and spacing.
+// ** Use EMs for media queries.
+
+// Enter values in pixels, they will be converted to ems or rems automatically
+$max-page-width: em(1100);
+
+// Margins / Gutters  - Rems are ideal to use, but don't forget to add px fallback values for old browsers if you do!
+$page-margin: rem(20);
+$page-margin-wide: rem(40);
+
+$vertical-spacing: rem(16);

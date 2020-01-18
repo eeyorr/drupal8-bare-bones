@@ -1,0 +1,16 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/custom.css: {}
+
+global-scripts:
+  version: VERSION
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+  js:
+      js/modernizr.js: {}
+      js/custom.js: {}
+

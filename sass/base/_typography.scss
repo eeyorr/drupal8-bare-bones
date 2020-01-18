@@ -1,0 +1,57 @@
+// Base Typography Styles
+
+// Headers
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+// Other
+p,
+pre {
+  margin: 0;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+sup {
+  font-size: 50%;
+  line-height: 0;
+  vertical-align: super;
+}
+
+sub {
+  font-size: 50%;
+  line-height: 0;
+  vertical-align: sub;
+}

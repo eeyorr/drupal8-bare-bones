@@ -1,0 +1,68 @@
+// Mixins
+
+// Px to Em mixin
+// Unit mixins
+// Ems for breakpoints, using browser context font size
+@function bp-em($pixels, $context: 16) {
+  @return #{$pixels/$context}em;
+}
+
+// Ems in relation to base font size
+@function em($pixels, $context: $base-font-size) {
+  @return #{$pixels/$context}em;
+}
+
+// Rem conversion
+// Convert pixel values to rem.
+@function rem($px, $base: $base-font-size) {
+  @return ($px / $base) * 1rem;
+}
+
+// Rem font size conversion w/ px fallbacks
+// https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_fontSize.scss
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $size - the value in pixels (without px suffix) that you want to convert
+ *
+ * e.g. p {@include fontSize(12);} 
+ *
+ */
+
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+  $remSize: $size / $base-font-size;
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+  font-size: #{$size}px;
+  font-size: calculateRem($size);
+}
+
+// Preferred version of clearfix
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Centers a block level element, requires width
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Vertical align, all browsers http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

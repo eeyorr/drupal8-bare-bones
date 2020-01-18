@@ -1,0 +1,15 @@
+{
+    "name": "eeyorr/drupal8-bare-bones",
+    "description": "A bare bones starter theme for Drupal 8",
+    "type": "drupal-theme",
+    "homepage": "https://github.com/eeyorr/drupal8-bare-bones",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Eric Orr",
+            "role": "Maintainer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

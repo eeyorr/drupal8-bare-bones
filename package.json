@@ -1,0 +1,23 @@
+{
+  "name": "bare_bones",
+  "version": "1.0.0",
+  "description": "Bare Bones Drupal 8 theme based on DevCollab LightShip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eeyorr",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "engines": {
+    "node": "11.10.0"
+  }
+}

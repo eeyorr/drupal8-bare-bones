@@ -1,0 +1,27 @@
+// Base HTML Styles
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+html {
+  font-size: 100% * ($base-font-size / 16);
+  line-height: $base-line-height;
+  min-height: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+object,
+figure,
+input,
+svg {
+  max-width: 100%;
+  height: auto;
+}
